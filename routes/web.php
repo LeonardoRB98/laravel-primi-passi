@@ -12,7 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// questo file contiene le rotte gestite dalla nostra applicazione
+// '/' equivale 
 Route::get('/', function () {
     return view('welcome');
+});
+// pagina di prova
+Route::get('/hello-world', function () {
+    return view('hello-world');
 });
